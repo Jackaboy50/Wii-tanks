@@ -8,6 +8,7 @@ public class ShellMovement : MonoBehaviour
 {
     [SerializeField] private float shellSpeed;
     private int localShellRicochets;
+    private float timeSinceLastRichochet;
     // Start is called before the first frame update
     void Start()
     {
@@ -48,8 +49,9 @@ public class ShellMovement : MonoBehaviour
             if(localShellRicochets > 0)
             {
                 Ricochet(collision);
+                timeSinceLastRichochet = Time.time;
             }
-            else
+            else if(Time.time - timeSinceLastRichochet > 0.001)
             {
                 Destroy(this.gameObject);
             }

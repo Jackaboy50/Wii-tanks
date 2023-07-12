@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3735757217370099645}
   - component: {fileID: 4833594291647825098}
   - component: {fileID: 7332726988692483228}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polygon0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8581345841852844906}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tnk_field_mdl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140,7 +140,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7542884853261125640}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: longInnerFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

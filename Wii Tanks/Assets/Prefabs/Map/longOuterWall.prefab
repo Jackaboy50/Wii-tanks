@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 3155369043193585748}
   - component: {fileID: 2479829637073626950}
   - component: {fileID: 7091756932638741934}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polygon30
   m_TagString: Map
   m_Icon: {fileID: 0}
@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 907924383975978671}
   - component: {fileID: 631079610105885804}
   - component: {fileID: 8950231959498883910}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polygon32
   m_TagString: Map
   m_Icon: {fileID: 0}
@@ -400,7 +400,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 75.640625, y: 77.921875, z: 141.45}
+  m_Size: {x: 74.1, y: 77.921875, z: 220.1}
   m_Center: {x: 420.1953, y: 40.351562, z: 190.89066}
 --- !u!1 &591911348731657259
 GameObject:
@@ -501,7 +501,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 35, y: 35, z: 186.9}
-  m_Center: {x: 402.5, y: 17.5, z: 245}
+  m_Center: {x: 404.42, y: 17.5, z: 245}
 --- !u!1 &698305979901099392
 GameObject:
   m_ObjectHideFlags: 0
@@ -976,7 +976,7 @@ GameObject:
   - component: {fileID: 3010962612572219353}
   - component: {fileID: 4560428759425452771}
   - component: {fileID: 4295926013866327065}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polygon26
   m_TagString: Map
   m_Icon: {fileID: 0}
@@ -1164,8 +1164,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 172.2, y: 36.906254, z: 85.2}
-  m_Center: {x: 325.0703, y: 16.781252, z: 337.1094}
+  m_Size: {x: 173.2, y: 36.906254, z: 79.2}
+  m_Center: {x: 326.3, y: 16.781252, z: 337.1094}
 --- !u!1 &2191104454418519588
 GameObject:
   m_ObjectHideFlags: 0
@@ -2077,7 +2077,7 @@ GameObject:
   - component: {fileID: 1583391502579900435}
   - component: {fileID: 5771592992421411775}
   - component: {fileID: 7558566470424799577}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polygon28
   m_TagString: Map
   m_Icon: {fileID: 0}
@@ -2478,7 +2478,7 @@ GameObject:
   - component: {fileID: 8623766065742431131}
   - component: {fileID: 4902550971320511445}
   - component: {fileID: 174962973715994325}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polygon31
   m_TagString: Map
   m_Icon: {fileID: 0}
@@ -2979,7 +2979,7 @@ GameObject:
   - component: {fileID: 2830650992296530321}
   - component: {fileID: 972445297274017005}
   - component: {fileID: 8432583889388390250}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polygon29
   m_TagString: Map
   m_Icon: {fileID: 0}
@@ -3080,7 +3080,7 @@ GameObject:
   - component: {fileID: 1268952558721021064}
   - component: {fileID: 8509626718538918830}
   - component: {fileID: 7922793908704099380}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polygon25
   m_TagString: Map
   m_Icon: {fileID: 0}
@@ -4069,7 +4069,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 38.57, y: 35, z: 44.3}
-  m_Center: {x: 402.5, y: 17.5, z: 280}
+  m_Center: {x: 404.42, y: 17.5, z: 280}
 --- !u!1 &5714910918217127677
 GameObject:
   m_ObjectHideFlags: 0
@@ -4381,7 +4381,7 @@ GameObject:
   - component: {fileID: 8756417178014835776}
   - component: {fileID: 6129132607406761358}
   - component: {fileID: 1405624959840999468}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: polygon27
   m_TagString: Map
   m_Icon: {fileID: 0}
