@@ -1,0 +1,364 @@
+
+###############################################################################
+#
+# wszst settings:
+# ---------------
+#
+# This is the settings file for wszst (tool of "Wiimms SZS Tools"). It
+# was created by the EXTRACT command and is needed by the CREATE command
+# to rebuild the original source archive with or without modifications.
+# You can edit it, if you know what you do.
+#
+###############################################################################
+
+# The first part contains some general settings:
+
+# The internal archive format (U8, WU8, BRRES, BREFF or BREFT):
+archive-format = U8
+
+# The file format (YAZ0, YAZ1 or BZ for a compressed archive, other ignored):
+file-format = YAZ0
+
+# An archive format related version number (-1: unknown or not relevant)
+version = -1
+
+# For U8+WU8 archives: Is there a special '.' base directory:
+have-pt-dir = 0
+
+# The minimum and maximum file data positions:
+min-data-offset = 0x0
+max-data-offset = 0x299ae0
+
+# The calculated alignment of all files:
+data-align = 0x20
+
+###############################################################################
+#
+# Some general rules for the next sections:
+#   All paths are relative to the current base directory (directory that
+#   contains the file wszst-setup.txt). Prefix at least paths that starts
+#   not with a letter, digit, point, star or underscore with "./".
+#
+#------------------------------------------------------------------------------
+
+[include-pattern]
+
+# All files and directories start with a . are hidden (unix like) and excluded
+# automatically. But filenames in one of the include sections are included
+# independent of this point. Also the include sections takes precedence over
+# the exclude sections.
+
+# This section expects file patterns with wildcards.
+
+#------------------------------------------------------------------------------
+
+[include]
+
+# This second include section accpepts only complete file names and none of
+# characters have any special meaning.
+
+
+#------------------------------------------------------------------------------
+
+[exclude-pattern]
+
+# Files and directories in this section are ignored by the CREATE command.
+# The include sections takes precedence over the exclude sections.
+
+# This section expects file patterns with wildcards.
+# Here we exclude all original, backup and temp files:
+
+*.orig
+*.bak
+*.tmp
+*.temp
+
+# Exclude all *.d directories. To enable it, remove "# " at the beginning.
+# *.d
+
+# Exclude all PNG files. The intention is to allow the creation of new PNG
+# images and mipmap files without any need to edit this setup file. All
+# extracted PNG files are automatically listed in the [exclude] section.
+# So the exclusion of all PNG is not really needed, but may help. The second
+# (disabled) line is an alternative to exclude all mipmap PNG files.
+
+*.png
+# *.mm#.png
+
+#------------------------------------------------------------------------------
+
+[exclude]
+
+# Files and directories in this section are ignored by the CREATE command.
+# This second exclude section accepts only complete file names and none of
+# characters have any special meaning.
+
+./G3D/sceneFile.brres.d
+./G3D/shell.brres.d
+./G3D/tnk_block.brres.d
+./G3D/tnk_block_shadow.brres.d
+./G3D/tnk_check.brres.d
+./G3D/tnk_field_16_9.brres.d
+./G3D/tnk_field_4_3.brres.d
+./G3D/tnk_mine.brres.d
+./G3D/tnk_tank.brres.d
+./basic_tank.breff.d
+./basic_tank.breft.d
+./course.kcl.d
+./course.kcl.flag
+./course.kcl.mtl
+./course.kcl.obj
+./course.kmp.d
+./course.kmp.txt
+./course.lex.txt
+./tnk_footmark/tnk_mark_1p.bti.d
+./tnk_footmark/tnk_mark_2p.bti.d
+./tnk_footmark/tnk_mark_e_1.bti.d
+./tnk_footmark/tnk_mark_e_2.bti.d
+./tnk_footmark/tnk_mark_e_3.bti.d
+./tnk_footmark/tnk_mark_e_4.bti.d
+./tnk_footmark/tnk_mark_e_5.bti.d
+./tnk_footmark/tnk_mark_e_6.bti.d
+./tnk_footmark/tnk_mark_e_7.bti.d
+./tnk_footmark/tnk_mark_e_8.bti.d
+./tnk_footmark/tnk_mark_e_9.bti.d
+./wszst-setup.txt
+
+#------------------------------------------------------------------------------
+
+[encode]
+
+# Encode (and overwrite without notice) the listed files before adding them
+# to the new archive. The source is searched under the same filename with the
+# correct source extension added or, if this failed, a replaced extension.
+#   Example: For "message.bmg" search files "message.bmg.txt" or "message.txt"
+# The source file itself is set on the exclude list and will not stored into
+# the new archive.
+#
+# The syntax of this file section is a little bit different as the other file
+# sections. Each line begins with a comma separated list of keywords followed
+# by an equal sign.
+#   Syntax:  COMMA_SEPARATED_FORMAT_LIST = relative_filename
+#   Example: BREFT,IA8,3 = ./files/rk_steam
+# The first keyword is the file format. The following keywords describe sub
+# formats. An additonal integer is a file type specific information:
+#  -> For image files it is the number of images (main image + mipmaps).
+#     A value of 0 means: Use the tools default (see option --n-mipmaps).
+#
+# A file is only encoded if the destination does not exist or if the source
+# is younger than the destination. Encoding can be controlled by options
+# --no-encode, --encode-img and --encode-all (short: --noenc --eimg --eall).
+
+KCL		= ./course.kcl
+KMP		= ./course.kmp
+LEX		= ./course.lex
+BTI,IA4,1	= ./tnk_footmark/tnk_mark_1p.bti
+BTI,IA4,1	= ./tnk_footmark/tnk_mark_2p.bti
+BTI,IA4,1	= ./tnk_footmark/tnk_mark_e_1.bti
+BTI,IA4,1	= ./tnk_footmark/tnk_mark_e_2.bti
+BTI,IA4,1	= ./tnk_footmark/tnk_mark_e_3.bti
+BTI,IA4,1	= ./tnk_footmark/tnk_mark_e_4.bti
+BTI,IA4,1	= ./tnk_footmark/tnk_mark_e_5.bti
+BTI,IA4,1	= ./tnk_footmark/tnk_mark_e_6.bti
+BTI,IA4,1	= ./tnk_footmark/tnk_mark_e_7.bti
+BTI,IA4,1	= ./tnk_footmark/tnk_mark_e_8.bti
+BTI,IA4,1	= ./tnk_footmark/tnk_mark_e_9.bti
+
+#------------------------------------------------------------------------------
+
+[create]
+
+# Create (and overwrite without notice) the listed files before adding them to
+# the new archive. The source directory is searched under the same filename
+# with an appended ".d" or, if this fails, with an extension replaced by ".d".
+# If a source directory does not exist, the job is ignored silently.
+#   Example: For "my.brres" search directories "my.brres.d" or "my.d"
+# The source directory itself is set on the exclude list and will not stored
+# into the new archive. Creating can be controlled by the options:
+#   --no-recurse  : Do not create archives recursively.
+#   --no-encode   : Do not encode files before creating an archive.
+#   --encode-img  : Encode all image files (TEX,TPL,BREFT/sub), overrides --no-encode.
+#   --encode-all  : Encode all files and ignore timestamps.
+#   --pt-dir      : Set `point directory' mode.
+#   --u8          : Create an U8 archive.
+#   --brres       : Create an BRRES archive.
+#   --breff       : Create an BREFF archive.
+#   --breft       : Create an BREFT archive.
+#   --no-compress : Create an uncompressed file (U8 instead of SZS).
+#   ...
+
+./G3D/sceneFile.brres
+./G3D/shell.brres
+./G3D/tnk_block.brres
+./G3D/tnk_block_shadow.brres
+./G3D/tnk_check.brres
+./G3D/tnk_field_16_9.brres
+./G3D/tnk_field_4_3.brres
+./G3D/tnk_mine.brres
+./G3D/tnk_tank.brres
+./basic_tank.breff
+./basic_tank.breft
+
+#------------------------------------------------------------------------------
+
+[order]
+
+# This list contains all extracted files in the order of the original archive.
+# If creating archives (but not U8) this list will be used to sort the found
+# files. For archives with directory support (all but not PACK) it is very
+# important, that the directories are listed before the files that resides in
+# the directories.
+#
+# The value before the equal sign is the file offset in the original archive
+# and is ignored for sorting.
+
+    0x1380	= ./basic_tank.breff
+    0xd0a0	= ./basic_tank.breft
+		= ./G3D/
+   0x1cf00	= ./G3D/sceneFile.brres
+   0x1d500	= ./G3D/shell.brres
+   0x1f000	= ./G3D/tnk_block.brres
+   0xc4880	= ./G3D/tnk_block_shadow.brres
+   0xc7980	= ./G3D/tnk_check.brres
+   0xd0400	= ./G3D/tnk_field_16_9.brres
+  0x18d500	= ./G3D/tnk_field_4_3.brres
+  0x240480	= ./G3D/tnk_mine.brres
+  0x245000	= ./G3D/tnk_tank.brres
+		= ./MapData/
+  0x265200	= ./MapData/TnkMapData_P1_00_0.bin
+  0x265660	= ./MapData/TnkMapData_P1_00_1.bin
+  0x265c60	= ./MapData/TnkMapData_P1_01_0.bin
+  0x2660c0	= ./MapData/TnkMapData_P1_01_1.bin
+  0x2666c0	= ./MapData/TnkMapData_P1_02_0.bin
+  0x266b20	= ./MapData/TnkMapData_P1_02_1.bin
+  0x267120	= ./MapData/TnkMapData_P1_03_0.bin
+  0x267580	= ./MapData/TnkMapData_P1_03_1.bin
+  0x267b80	= ./MapData/TnkMapData_P1_04_0.bin
+  0x267fe0	= ./MapData/TnkMapData_P1_04_1.bin
+  0x2685e0	= ./MapData/TnkMapData_P1_05_0.bin
+  0x268a40	= ./MapData/TnkMapData_P1_05_1.bin
+  0x269040	= ./MapData/TnkMapData_P1_06_0.bin
+  0x2694a0	= ./MapData/TnkMapData_P1_06_1.bin
+  0x269aa0	= ./MapData/TnkMapData_P1_07_0.bin
+  0x269f00	= ./MapData/TnkMapData_P1_07_1.bin
+  0x26a500	= ./MapData/TnkMapData_P1_08_0.bin
+  0x26a960	= ./MapData/TnkMapData_P1_08_1.bin
+  0x26af60	= ./MapData/TnkMapData_P1_09_0.bin
+  0x26b3c0	= ./MapData/TnkMapData_P1_09_1.bin
+  0x26b9c0	= ./MapData/TnkMapData_P1_10_0.bin
+  0x26be20	= ./MapData/TnkMapData_P1_10_1.bin
+  0x26c420	= ./MapData/TnkMapData_P1_11_0.bin
+  0x26c880	= ./MapData/TnkMapData_P1_11_1.bin
+  0x26ce80	= ./MapData/TnkMapData_P1_12_0.bin
+  0x26d2e0	= ./MapData/TnkMapData_P1_12_1.bin
+  0x26d8e0	= ./MapData/TnkMapData_P1_13_0.bin
+  0x26dd40	= ./MapData/TnkMapData_P1_13_1.bin
+  0x26e340	= ./MapData/TnkMapData_P1_14_0.bin
+  0x26e7a0	= ./MapData/TnkMapData_P1_14_1.bin
+  0x26eda0	= ./MapData/TnkMapData_P1_15_0.bin
+  0x26f200	= ./MapData/TnkMapData_P1_15_1.bin
+  0x26f800	= ./MapData/TnkMapData_P1_16_0.bin
+  0x26fc60	= ./MapData/TnkMapData_P1_16_1.bin
+  0x270260	= ./MapData/TnkMapData_P1_17_0.bin
+  0x2706c0	= ./MapData/TnkMapData_P1_17_1.bin
+  0x270cc0	= ./MapData/TnkMapData_P1_18_0.bin
+  0x271120	= ./MapData/TnkMapData_P1_18_1.bin
+  0x271720	= ./MapData/TnkMapData_P1_19_0.bin
+  0x271b80	= ./MapData/TnkMapData_P1_19_1.bin
+  0x272180	= ./MapData/TnkMapData_P1_20_0.bin
+  0x2725e0	= ./MapData/TnkMapData_P1_20_1.bin
+  0x272be0	= ./MapData/TnkMapData_P1_21_0.bin
+  0x273040	= ./MapData/TnkMapData_P1_21_1.bin
+  0x273640	= ./MapData/TnkMapData_P1_22_0.bin
+  0x273aa0	= ./MapData/TnkMapData_P1_22_1.bin
+  0x2740a0	= ./MapData/TnkMapData_P1_23_0.bin
+  0x274500	= ./MapData/TnkMapData_P1_23_1.bin
+  0x274b00	= ./MapData/TnkMapData_P1_24_0.bin
+  0x274f60	= ./MapData/TnkMapData_P1_24_1.bin
+  0x275560	= ./MapData/TnkMapData_P1_25_0.bin
+  0x2759c0	= ./MapData/TnkMapData_P1_25_1.bin
+  0x275fc0	= ./MapData/TnkMapData_P1_26_0.bin
+  0x276420	= ./MapData/TnkMapData_P1_26_1.bin
+  0x276a20	= ./MapData/TnkMapData_P1_27_0.bin
+  0x276e80	= ./MapData/TnkMapData_P1_27_1.bin
+  0x277480	= ./MapData/TnkMapData_P1_28_0.bin
+  0x2778e0	= ./MapData/TnkMapData_P1_28_1.bin
+  0x277ee0	= ./MapData/TnkMapData_P1_29_0.bin
+  0x278340	= ./MapData/TnkMapData_P1_29_1.bin
+  0x278940	= ./MapData/TnkMapData_P2_00_0.bin
+  0x278da0	= ./MapData/TnkMapData_P2_00_1.bin
+  0x2793a0	= ./MapData/TnkMapData_P2_01_0.bin
+  0x279800	= ./MapData/TnkMapData_P2_01_1.bin
+  0x279e00	= ./MapData/TnkMapData_P2_02_0.bin
+  0x27a260	= ./MapData/TnkMapData_P2_02_1.bin
+  0x27a860	= ./MapData/TnkMapData_P2_03_0.bin
+  0x27acc0	= ./MapData/TnkMapData_P2_03_1.bin
+  0x27b2c0	= ./MapData/TnkMapData_P2_04_0.bin
+  0x27b720	= ./MapData/TnkMapData_P2_04_1.bin
+  0x27bd20	= ./MapData/TnkMapData_P2_05_0.bin
+  0x27c180	= ./MapData/TnkMapData_P2_05_1.bin
+  0x27c780	= ./MapData/TnkMapData_P2_06_0.bin
+  0x27cbe0	= ./MapData/TnkMapData_P2_06_1.bin
+  0x27d1e0	= ./MapData/TnkMapData_P2_07_0.bin
+  0x27d640	= ./MapData/TnkMapData_P2_07_1.bin
+  0x27dc40	= ./MapData/TnkMapData_P2_08_0.bin
+  0x27e0a0	= ./MapData/TnkMapData_P2_08_1.bin
+  0x27e6a0	= ./MapData/TnkMapData_P2_09_0.bin
+  0x27eb00	= ./MapData/TnkMapData_P2_09_1.bin
+  0x27f100	= ./MapData/TnkMapData_P2_10_0.bin
+  0x27f560	= ./MapData/TnkMapData_P2_10_1.bin
+  0x27fb60	= ./MapData/TnkMapData_P2_11_0.bin
+  0x27ffc0	= ./MapData/TnkMapData_P2_11_1.bin
+  0x2805c0	= ./MapData/TnkMapData_P2_12_0.bin
+  0x280a20	= ./MapData/TnkMapData_P2_12_1.bin
+  0x281020	= ./MapData/TnkMapData_P2_13_0.bin
+  0x281480	= ./MapData/TnkMapData_P2_13_1.bin
+  0x281a80	= ./MapData/TnkMapData_P2_14_0.bin
+  0x281ee0	= ./MapData/TnkMapData_P2_14_1.bin
+  0x2824e0	= ./MapData/TnkMapData_P2_15_0.bin
+  0x282940	= ./MapData/TnkMapData_P2_15_1.bin
+  0x282f40	= ./MapData/TnkMapData_P2_16_0.bin
+  0x2833a0	= ./MapData/TnkMapData_P2_16_1.bin
+  0x2839a0	= ./MapData/TnkMapData_P2_17_0.bin
+  0x283e00	= ./MapData/TnkMapData_P2_17_1.bin
+  0x284400	= ./MapData/TnkMapData_P2_18_0.bin
+  0x284860	= ./MapData/TnkMapData_P2_18_1.bin
+  0x284e60	= ./MapData/TnkMapData_P2_19_0.bin
+  0x2852c0	= ./MapData/TnkMapData_P2_19_1.bin
+  0x2858c0	= ./MapData/TnkMapData_P2_20_0.bin
+  0x285d20	= ./MapData/TnkMapData_P2_20_1.bin
+  0x286320	= ./MapData/TnkMapData_P2_21_0.bin
+  0x286780	= ./MapData/TnkMapData_P2_21_1.bin
+  0x286d80	= ./MapData/TnkMapData_P2_22_0.bin
+  0x2871e0	= ./MapData/TnkMapData_P2_22_1.bin
+  0x2877e0	= ./MapData/TnkMapData_P2_23_0.bin
+  0x287c40	= ./MapData/TnkMapData_P2_23_1.bin
+  0x288240	= ./MapData/TnkMapData_P2_24_0.bin
+  0x2886a0	= ./MapData/TnkMapData_P2_24_1.bin
+  0x288ca0	= ./MapData/TnkMapData_P2_25_0.bin
+  0x289100	= ./MapData/TnkMapData_P2_25_1.bin
+  0x289700	= ./MapData/TnkMapData_P2_26_0.bin
+  0x289b60	= ./MapData/TnkMapData_P2_26_1.bin
+  0x28a160	= ./MapData/TnkMapData_P2_27_0.bin
+  0x28a5c0	= ./MapData/TnkMapData_P2_27_1.bin
+  0x28abc0	= ./MapData/TnkMapData_P2_28_0.bin
+  0x28b020	= ./MapData/TnkMapData_P2_28_1.bin
+  0x28b620	= ./MapData/TnkMapData_P2_29_0.bin
+  0x28ba80	= ./MapData/TnkMapData_P2_29_1.bin
+		= ./param/
+  0x28c080	= ./param/TnkGameParam.bin
+		= ./tnk_footmark/
+  0x28e980	= ./tnk_footmark/tnk_mark_1p.bti
+  0x28f9a0	= ./tnk_footmark/tnk_mark_2p.bti
+  0x2909c0	= ./tnk_footmark/tnk_mark_e_1.bti
+  0x2919e0	= ./tnk_footmark/tnk_mark_e_2.bti
+  0x292a00	= ./tnk_footmark/tnk_mark_e_3.bti
+  0x293a20	= ./tnk_footmark/tnk_mark_e_4.bti
+  0x294a40	= ./tnk_footmark/tnk_mark_e_5.bti
+  0x295a60	= ./tnk_footmark/tnk_mark_e_6.bti
+  0x296a80	= ./tnk_footmark/tnk_mark_e_7.bti
+  0x297aa0	= ./tnk_footmark/tnk_mark_e_8.bti
+  0x298ac0	= ./tnk_footmark/tnk_mark_e_9.bti
+
+#------------------------------------------------------------------------------
+
