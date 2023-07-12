@@ -356,7 +356,6 @@
 "Assets/Scripts/Tank/CannonMovement.cs"
 "Assets/Scripts/Tank/LaserScript.cs"
 "Assets/Scripts/Tank/Tank Ai/brownCannon.cs"
-"Assets/Scripts/Tank/Tank Ai/brownTankAi.cs"
 "Assets/Scripts/Tank/TankMovement.cs"
 -langversion:9.0
 

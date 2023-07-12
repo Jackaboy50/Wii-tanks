@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Timeline;
@@ -9,42 +10,58 @@ public class brownCannon : MonoBehaviour
 {
     private float previousShotTime;
 
-    private float rotationSpeed = 0.5f;
-    private float rotationRange = 0.3f;
+    bool waiting = false;
     private Quaternion lookRotation;
-    private Quaternion minRotation;
-    private Quaternion maxRotation;
+    private Quaternion[] rotationPoints = new Quaternion[] 
+    { 
+        Quaternion.Euler(0, 0, 0), 
+        Quaternion.Euler(45, 0, 0),
+        Quaternion.Euler(90, 0, 0),
+        Quaternion.Euler(135, 0, 0),
+        Quaternion.Euler(180, 0, 0),
+        Quaternion.Euler(225, 0, 0),
+        Quaternion.Euler(270, 0, 0),
+        Quaternion.Euler(315, 0, 0),
+        Quaternion.Euler(360, 0, 0),
+    };
 
     [SerializeField] private GameObject tankShell;
     // Start is called before the first frame update
     void Start()
     {
-        maxRotation = Quaternion.Euler(180, 0, 0);
-        minRotation = Quaternion.Euler(0, 0, 0);
-        lookRotation = maxRotation;
+        lookRotation = rotationPoints[Random.Range(1, 9)];
     }
 
     // Update is called once per frame
     void Update()
     {
-        CannonMovement();
+        RandomCannonMovement();
         CheckForPlayer(transform.position, transform.forward);
     }
 
-    void CannonMovement()
+    void RandomCannonMovement()
     {
         Vector3 currentRotation = transform.eulerAngles;
-        if (transform.rotation.x >= 1 - rotationRange - 0.05)
-        {
-            lookRotation = minRotation;
-        }
-        else if (transform.rotation.x <= 0 + rotationRange)
-        {
-            lookRotation = maxRotation;
-        }
-        Quaternion rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * rotationSpeed);
+        Quaternion rotation = Quaternion.RotateTowards(transform.rotation, lookRotation, 0.08f);
         transform.rotation = rotation;
         transform.eulerAngles = new Vector3(currentRotation.x, transform.eulerAngles.y, currentRotation.z);
+        if (!waiting)
+        {
+            StartCoroutine(ChangeAngles(3));
+        }
+    }
+
+    IEnumerator ChangeAngles(int seconds)
+    {
+        waiting = true;
+        yield return new WaitForSeconds(seconds);
+        int index = Random.Range(0, 9);
+        while(lookRotation == rotationPoints[index])
+        {
+            index = Random.Range(0, 9);
+        }
+        lookRotation = rotationPoints[index];
+        waiting = false;
     }
 
     void CheckForPlayer(Vector3 targetPosition, Vector3 direction)
