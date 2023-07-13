@@ -6,19 +6,23 @@ using UnityEngine;
 
 public class ShellMovement : MonoBehaviour
 {
-    [SerializeField] private float shellSpeed;
+    private float shellSpeed;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip ricochetClip;
+    [SerializeField] private AudioClip shellExplode;
+    [SerializeField] private AudioClip shellFire;
     private int localShellRicochets;
     private float timeSinceLastRichochet;
     // Start is called before the first frame update
     void Start()
     {
-
+        audioSource.clip = shellFire;
+        audioSource.Play();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 currentPosition = transform.position;
         Vector3 currentRotation = transform.eulerAngles;
         transform.position += transform.forward * shellSpeed * Time.deltaTime;
         transform.position = new Vector3(transform.position.x, 16.5f, transform.position.z);
@@ -39,6 +43,7 @@ public class ShellMovement : MonoBehaviour
     IEnumerator Waiter(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
+        Destroy(gameObject);
     }
 
     void OnCollisionEnter(Collision collision)
@@ -53,7 +58,11 @@ public class ShellMovement : MonoBehaviour
             }
             else if(Time.time - timeSinceLastRichochet > 0.001)
             {
-                Destroy(this.gameObject);
+                audioSource.clip = shellExplode;
+                audioSource.pitch = Random.Range(0.5f, 1f);
+                audioSource.Play();
+                gameObject.GetComponentInChildren<MeshRenderer>().enabled = false;
+                StartCoroutine(Waiter(0.3f));
             }
             localShellRicochets--;
         }
@@ -67,6 +76,9 @@ public class ShellMovement : MonoBehaviour
     {
         Vector3 ricochet = Vector3.Reflect(transform.forward, collision.contacts[0].normal);
         transform.forward = ricochet;
+        audioSource.clip = ricochetClip;
+        audioSource.pitch = Random.Range(0.9f, 2f);
+        audioSource.Play();
     }
 
     void KillTank(GameObject Tank)
