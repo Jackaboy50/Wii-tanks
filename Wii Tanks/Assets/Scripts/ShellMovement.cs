@@ -48,7 +48,7 @@ public class ShellMovement : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(collision.gameObject.name);
+        //Debug.Log(collision.gameObject.name);
         if (collision.gameObject.tag == "Map")
         {
             if(localShellRicochets > 0)
@@ -68,7 +68,7 @@ public class ShellMovement : MonoBehaviour
         }
         else if (collision.gameObject.tag == "Tank")
         {
-            KillTank(collision.gameObject);
+            //KillTank(collision.gameObject);
         }
     }
 

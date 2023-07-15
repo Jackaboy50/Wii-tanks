@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2115276868314464240}
   m_Layer: 0
   m_Name: polygon0
-  m_TagString: Untagged
+  m_TagString: Shell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 7398864528273610670}
   m_Layer: 0
   m_Name: shell
-  m_TagString: Untagged
+  m_TagString: Shell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

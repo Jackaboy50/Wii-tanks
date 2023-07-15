@@ -17,13 +17,21 @@ public class SceneController : MonoBehaviour
         Instantiate(longOuterWall);
         Instantiate(longInnerFloor);
         Instantiate(playerTank);
-        Instantiate(brownTank, new Vector3(100, 0, 100), Quaternion.identity);
-
+        Instantiate(brownTank, new Vector3(Random.Range(-360, 360), 0, Random.Range(-230, 260)), Quaternion.identity);
+        //TankTest();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    void TankTest()
+    {
+        for (int i = 0; i < 300; i++)
+        {
+            Instantiate(brownTank, new Vector3(Random.Range(-360, 360), 0, Random.Range(-230, 260)), Quaternion.identity);
+        }
     }
 }

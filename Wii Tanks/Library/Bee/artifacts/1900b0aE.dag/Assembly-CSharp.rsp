@@ -350,12 +350,14 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/Crosshair.cs"
+"Assets/Scripts/MusicPlayer.cs"
 "Assets/Scripts/SceneController.cs"
 "Assets/Scripts/ShellMovement.cs"
 "Assets/Scripts/Tank/CannonFire.cs"
 "Assets/Scripts/Tank/CannonMovement.cs"
 "Assets/Scripts/Tank/LaserScript.cs"
 "Assets/Scripts/Tank/Tank Ai/brownCannon.cs"
+"Assets/Scripts/Tank/TankDeath.cs"
 "Assets/Scripts/Tank/TankMovement.cs"
 -langversion:9.0
 
