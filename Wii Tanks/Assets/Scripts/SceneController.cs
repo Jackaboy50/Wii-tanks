@@ -7,6 +7,7 @@ public class SceneController : MonoBehaviour
     [Header("Scene Objects")]
     [SerializeField] private GameObject longOuterWall;
     [SerializeField] private GameObject longInnerFloor;
+    [SerializeField] private GameObject crosshair;
 
     [Header("Tanks")]
     [SerializeField] private GameObject playerTank;
@@ -16,6 +17,7 @@ public class SceneController : MonoBehaviour
     {
         Instantiate(longOuterWall);
         Instantiate(longInnerFloor);
+        Instantiate(crosshair);
         Instantiate(playerTank);
         Instantiate(brownTank, new Vector3(Random.Range(-360, 360), 0, Random.Range(-230, 260)), Quaternion.identity);
         //TankTest();
@@ -29,7 +31,7 @@ public class SceneController : MonoBehaviour
 
     void TankTest()
     {
-        for (int i = 0; i < 300; i++)
+        for (int i = 0; i < 100; i++)
         {
             Instantiate(brownTank, new Vector3(Random.Range(-360, 360), 0, Random.Range(-230, 260)), Quaternion.identity);
         }

@@ -7,9 +7,9 @@ using UnityEngine;
 public class CannonFire : MonoBehaviour
 {
     [SerializeField] private GameObject tankShell;
-    
 
-    private float reloadTime;
+
+    private float reloadTime = 3;
     private int tankAmmo = 5;
     private bool waiting = false;
     void Awake()
@@ -27,10 +27,10 @@ public class CannonFire : MonoBehaviour
         }
         else if(tankAmmo == 0 && waiting == false)
         {
-            StartCoroutine(Reload(3));
+            StartCoroutine(Reload(reloadTime));
         }
     }
-    IEnumerator Reload(int seconds)
+    IEnumerator Reload(float seconds)
     {
         waiting = true;
         yield return new WaitForSeconds(seconds);

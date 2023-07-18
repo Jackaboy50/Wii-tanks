@@ -15,7 +15,7 @@ D:/jackt/Documents/Wii-tanks/Wii Tanks
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51636
+57346
 Successfully changed project path to: D:/jackt/Documents/Wii-tanks/Wii Tanks
 D:/jackt/Documents/Wii-tanks/Wii Tanks
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ D:/jackt/Documents/Wii-tanks/Wii Tanks
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [35748] Host "[IP] 192.168.0.69 [Port] 0 [Flags] 2 [Guid] 3068995457 [EditorId] 3068995457 [Version] 1048832 [Id] WindowsEditor(7,Xbox-V2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [5932] Host "[IP] 192.168.0.69 [Port] 0 [Flags] 2 [Guid] 742545700 [EditorId] 742545700 [Version] 1048832 [Id] WindowsEditor(7,Xbox-V2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [35748] Host "[IP] 192.168.0.69 [Port] 0 [Flags] 2 [Guid] 3068995457 [EditorId] 3068995457 [Version] 1048832 [Id] WindowsEditor(7,Xbox-V2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [5932] Host "[IP] 192.168.0.69 [Port] 0 [Flags] 2 [Guid] 742545700 [EditorId] 742545700 [Version] 1048832 [Id] WindowsEditor(7,Xbox-V2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 81.29 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 92.25 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.16f1 (4016570cf34f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity 2021.3.16f1/Editor/Data/Resources/UnitySubsystems
@@ -67,89 +67,89 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity 2021.3.16f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity 2021.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity 2021.3.16f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56644
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56984
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity 2021.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003776 seconds.
+Registered in 0.004589 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 183.00 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 91.38 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.939 seconds
+- Completed reload, in  0.756 seconds
 Domain Reload Profiling:
-	ReloadAssembly (940ms)
-		BeginReloadAssembly (73ms)
+	ReloadAssembly (756ms)
+		BeginReloadAssembly (93ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (736ms)
-			LoadAssemblies (71ms)
+		EndReloadAssembly (519ms)
+			LoadAssemblies (91ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (136ms)
+			SetupTypeCache (135ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (473ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (300ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (183ms)
-				BeforeProcessingInitializeOnLoad (6ms)
-				ProcessInitializeOnLoadAttributes (216ms)
-				ProcessInitializeOnLoadMethodAttributes (57ms)
+				RefreshPlugins (91ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (144ms)
+				ProcessInitializeOnLoadMethodAttributes (55ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.011877 seconds.
+Registered in 0.005960 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\jackt\Documents\Wii-tanks\Wii Tanks\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\jackt\Documents\Wii-tanks\Wii Tanks\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.11 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.029 seconds
+- Completed reload, in  1.344 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1030ms)
-		BeginReloadAssembly (106ms)
+	ReloadAssembly (1345ms)
+		BeginReloadAssembly (119ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (19ms)
-		EndReloadAssembly (821ms)
-			LoadAssemblies (80ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (1094ms)
+			LoadAssemblies (102ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (302ms)
+			SetupTypeCache (447ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (48ms)
-			SetupLoadedEditorAssemblies (352ms)
+			RebuildScriptCaches (78ms)
+			SetupLoadedEditorAssemblies (398ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (83ms)
-				ProcessInitializeOnLoadAttributes (232ms)
-				ProcessInitializeOnLoadMethodAttributes (26ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
+				BeforeProcessingInitializeOnLoad (94ms)
+				ProcessInitializeOnLoadAttributes (240ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (29ms)
+				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 1.18 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3369 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (113.4 KB). Loaded Objects now: 3826.
-Memory consumption went from 116.0 MB to 115.9 MB.
-Total: 3.628100 ms (FindLiveObjects: 0.344700 ms CreateObjectMapping: 0.087300 ms MarkObjects: 3.015300 ms  DeleteObjects: 0.179200 ms)
+Unloading 3371 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (113.4 KB). Loaded Objects now: 3828.
+Memory consumption went from 116.1 MB to 116.0 MB.
+Total: 3.919200 ms (FindLiveObjects: 0.386700 ms CreateObjectMapping: 0.099900 ms MarkObjects: 3.289400 ms  DeleteObjects: 0.141600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -164,175 +164,61 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 271105.297032 seconds.
-  path: Assets/Game Files/Audio Files/Instrument Samples/TankExplode.wav
-  artifactKey: Guid(e585b740ae8b052458fda812b71a45a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game Files/Audio Files/Instrument Samples/TankExplode.wav using Guid(e585b740ae8b052458fda812b71a45a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5fef7a29bc9ac88f54a6bedcaf7f51c') in 0.128856 seconds 
+  Time since last request: 60171.176944 seconds.
+  path: Assets/Scripts/Tank/CannonFire.cs
+  artifactKey: Guid(8d09fd9580aaa28408eafa7db3e2c78f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tank/CannonFire.cs using Guid(8d09fd9580aaa28408eafa7db3e2c78f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23acae9f65b67515c11ba0261cfbf413') in 0.085816 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.567835 seconds.
-  path: Assets/Game Files/Audio Files/Instrument Samples/ShellRicochet.wav
-  artifactKey: Guid(9222a54bc097828468afcbee375af251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game Files/Audio Files/Instrument Samples/ShellRicochet.wav using Guid(9222a54bc097828468afcbee375af251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '878cd22075d10d4f8e3cf74f63396475') in 0.029910 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 15.300204 seconds.
-  path: Assets/Game Files/Audio Files/Instrument Samples/MineBeep.wav
-  artifactKey: Guid(4727a31d1d0b5924c9562c9d373a42e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game Files/Audio Files/Instrument Samples/MineBeep.wav using Guid(4727a31d1d0b5924c9562c9d373a42e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0baf7960248c2b85117a9fff94611b5') in 0.058858 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.071397 seconds.
-  path: Assets/Game Files/Audio Files/Instrument Samples/MineTick.wav
-  artifactKey: Guid(d93bf3d62f03043449fc1a383179e274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game Files/Audio Files/Instrument Samples/MineTick.wav using Guid(d93bf3d62f03043449fc1a383179e274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23b721ee71599927a13b344bc551cc88') in 0.010842 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 18.983748 seconds.
-  path: Assets/Game Files/Audio Files/Instrument Samples/TankTrack1.wav
-  artifactKey: Guid(c4f5583f772942b4e9a9577002e6af75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game Files/Audio Files/Instrument Samples/TankTrack1.wav using Guid(c4f5583f772942b4e9a9577002e6af75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d9a7aa145edf750f24ec185a358d69b') in 0.041822 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.719010 seconds.
-  path: Assets/Game Files/Audio Files/Instrument Samples/TankTrack2.wav
-  artifactKey: Guid(9071cd3cc77611a4dbbc5365fc6627ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game Files/Audio Files/Instrument Samples/TankTrack2.wav using Guid(9071cd3cc77611a4dbbc5365fc6627ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '252d3d0e4466f047470702be369cd77e') in 0.013866 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.292652 seconds.
-  path: Assets/Game Files/Audio Files/Instrument Samples/TankTrack3.wav
-  artifactKey: Guid(360faaa84b3f6ed419a063a3b89499fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game Files/Audio Files/Instrument Samples/TankTrack3.wav using Guid(360faaa84b3f6ed419a063a3b89499fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c62f5ca92e4a1ccfd031b9f6ba37df3c') in 0.010413 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.727652 seconds.
-  path: Assets/Game Files/Audio Files/Instrument Samples/TankTrack4.wav
-  artifactKey: Guid(1b7bc16e3ce158842a7456ac740e4003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game Files/Audio Files/Instrument Samples/TankTrack4.wav using Guid(1b7bc16e3ce158842a7456ac740e4003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa5cbc938825560a89ae1416a281c4a5') in 0.016095 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 34.535939 seconds.
-  path: Assets/Game Files/Audio Files/Instrument Samples/MinePlant.wav
-  artifactKey: Guid(3c301b6c893885144b17d400f23d7658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game Files/Audio Files/Instrument Samples/MinePlant.wav using Guid(3c301b6c893885144b17d400f23d7658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de6649604ec6a69e36ec808985c173a4') in 0.011871 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.303331 seconds.
-  path: Assets/Game Files/Audio Files/Instrument Samples/GameFinish.wav
-  artifactKey: Guid(fcfed514877a87943b7a66a9564c4b55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game Files/Audio Files/Instrument Samples/GameFinish.wav using Guid(fcfed514877a87943b7a66a9564c4b55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e45c6461f3ce1698d9aa4825b463213') in 0.012115 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 27.370426 seconds.
-  path: Assets/Game Files/Audio Files/Instrument Samples/ShellExplode.wav
-  artifactKey: Guid(ec6ce5dc225b60b479a717645cfad21b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game Files/Audio Files/Instrument Samples/ShellExplode.wav using Guid(ec6ce5dc225b60b479a717645cfad21b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc0fd642610cc6f3852fe78982d5a71e') in 0.011519 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.662244 seconds.
-  path: Assets/Game Files/Audio Files/Instrument Samples/ShellFire.wav
-  artifactKey: Guid(0dbbcd3fdad555a46af97a4c121ce3ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game Files/Audio Files/Instrument Samples/ShellFire.wav using Guid(0dbbcd3fdad555a46af97a4c121ce3ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '024717dcddca1711e3295e1ffe3a8179') in 0.015317 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.819697 seconds.
-  path: Assets/Game Files/Audio Files/Instrument Samples/MineExplode.wav
-  artifactKey: Guid(f0f65fed61959504a9539837a67bfbb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game Files/Audio Files/Instrument Samples/MineExplode.wav using Guid(f0f65fed61959504a9539837a67bfbb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6ae4a2a26551c7ce36e558745790408') in 0.010455 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.633994 seconds.
-  path: Assets/Game Files/Audio Files/Instrument Samples/ShellPop.wav
-  artifactKey: Guid(960471c958bc4f54bb8c766561cf23df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game Files/Audio Files/Instrument Samples/ShellPop.wav using Guid(960471c958bc4f54bb8c766561cf23df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '312b9bdcbde2eba470fec6a6c90d8630') in 0.017497 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16.553156 seconds.
-  path: Assets/Game Files/Audio Files/Instrument Samples/ShellFire1.wav
-  artifactKey: Guid(ec6ce5dc225b60b479a717645cfad21b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game Files/Audio Files/Instrument Samples/ShellFire1.wav using Guid(ec6ce5dc225b60b479a717645cfad21b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7884bd577773322461dcdf92ef82d96') in 0.011411 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.146650 seconds.
-  path: Assets/Game Files/Audio Files/Instrument Samples/ShellFire2.wav
-  artifactKey: Guid(0dbbcd3fdad555a46af97a4c121ce3ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game Files/Audio Files/Instrument Samples/ShellFire2.wav using Guid(0dbbcd3fdad555a46af97a4c121ce3ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebfa7dc2f67eb0b4869fbffe1a323844') in 0.011396 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 27.617278 seconds.
-  path: Assets/Audio
-  artifactKey: Guid(9c0041fd140053c4691e18349e324f63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio using Guid(9c0041fd140053c4691e18349e324f63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9fd9abd8f0013f5fb923e0d2bce5752') in 0.006459 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 22.749474 seconds.
-  path: Assets/Audio/Game Sounds
-  artifactKey: Guid(4286c2daa78de7b4da65e13b2439c2a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Game Sounds using Guid(4286c2daa78de7b4da65e13b2439c2a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35ed4096296c88364c91df37e221541b') in 0.006045 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.172489 seconds.
-  path: Assets/Prefabs/Tanks/brownTank.prefab
-  artifactKey: Guid(982a12f99fcc2814388f4dbf3d96ed25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tanks/brownTank.prefab using Guid(982a12f99fcc2814388f4dbf3d96ed25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '253db1b1689710da1389877820cc2db3') in 0.064905 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 71.608729 seconds.
-  path: Assets/Prefabs/Tanks/playerTank.prefab
-  artifactKey: Guid(75f3bf718caa14048850d1f0bfc2ab00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tanks/playerTank.prefab using Guid(75f3bf718caa14048850d1f0bfc2ab00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '568176ccbb9b994d24b3d8d5da3be04d') in 0.020761 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 164.679028 seconds.
-  path: Assets/Prefabs/Tanks/playerTank.prefab
-  artifactKey: Guid(75f3bf718caa14048850d1f0bfc2ab00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tanks/playerTank.prefab using Guid(75f3bf718caa14048850d1f0bfc2ab00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b12f154ebc9b41760962e05d4c0180a') in 0.016511 seconds 
+  Time since last request: 344.706422 seconds.
+  path: Assets/Scripts/Tank/CannonFire.cs
+  artifactKey: Guid(8d09fd9580aaa28408eafa7db3e2c78f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tank/CannonFire.cs using Guid(8d09fd9580aaa28408eafa7db3e2c78f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ce36691eddc644c734287748b225764') in 0.010231 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005007 seconds.
+Registered in 0.006472 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\jackt\Documents\Wii-tanks\Wii Tanks\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\jackt\Documents\Wii-tanks\Wii Tanks\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.71 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.919 seconds
+- Completed reload, in  0.971 seconds
 Domain Reload Profiling:
-	ReloadAssembly (920ms)
-		BeginReloadAssembly (131ms)
+	ReloadAssembly (972ms)
+		BeginReloadAssembly (145ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (37ms)
-		EndReloadAssembly (699ms)
-			LoadAssemblies (88ms)
+			CreateAndSetChildDomain (39ms)
+		EndReloadAssembly (712ms)
+			LoadAssemblies (103ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (276ms)
+			SetupTypeCache (248ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (273ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (289ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (10ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (55ms)
-				ProcessInitializeOnLoadAttributes (180ms)
-				ProcessInitializeOnLoadMethodAttributes (21ms)
+				BeforeProcessingInitializeOnLoad (59ms)
+				ProcessInitializeOnLoadAttributes (191ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
 				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.65 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.02 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3364 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 20 unused Assets / (79.8 KB). Loaded Objects now: 3841.
-Memory consumption went from 133.1 MB to 133.0 MB.
-Total: 3.058200 ms (FindLiveObjects: 0.322800 ms CreateObjectMapping: 0.086500 ms MarkObjects: 2.538600 ms  DeleteObjects: 0.109200 ms)
+Unloading 3366 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (79.8 KB). Loaded Objects now: 3831.
+Memory consumption went from 116.0 MB to 115.9 MB.
+Total: 3.493100 ms (FindLiveObjects: 0.302700 ms CreateObjectMapping: 0.074400 ms MarkObjects: 2.969000 ms  DeleteObjects: 0.146000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -347,193 +233,55 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.242346 seconds.
-  path: Assets/Prefabs/Tanks/playerTank.prefab
-  artifactKey: Guid(75f3bf718caa14048850d1f0bfc2ab00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Tanks/playerTank.prefab using Guid(75f3bf718caa14048850d1f0bfc2ab00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c6cf12110728d4c57ce0bac9ad5cf01') in 0.071173 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.513586 seconds.
-  path: Assets/Audio/Game Sounds/052 - Tanks - Round Start.mp3
-  artifactKey: Guid(ad47a1fe9d3144c4ab3d41b507289471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Game Sounds/052 - Tanks - Round Start.mp3 using Guid(ad47a1fe9d3144c4ab3d41b507289471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5744db68d37336f2fc24538434cfdcb') in 0.019546 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Audio/Game Sounds/054 - Tanks - Round Failure.mp3
-  artifactKey: Guid(b3cb67175aea0614eb0fafb4eecc3c42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Game Sounds/054 - Tanks - Round Failure.mp3 using Guid(b3cb67175aea0614eb0fafb4eecc3c42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fbc913d655caa86ea57e9099a098f39') in 0.045064 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Audio/Game Sounds/062 - Tanks - Variation 7.mp3
-  artifactKey: Guid(575128ed71a78144dad8d256b386ff5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Game Sounds/062 - Tanks - Variation 7.mp3 using Guid(575128ed71a78144dad8d256b386ff5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8033a1549fc6a6f8e3836b6cf1f77546') in 0.014348 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Audio/Game Sounds/064 - Tanks - Clear Mission 20.mp3
-  artifactKey: Guid(43d4e7410649c894f9873ab34f55b0ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Game Sounds/064 - Tanks - Clear Mission 20.mp3 using Guid(43d4e7410649c894f9873ab34f55b0ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5a86e85b68300eb26be6bd0ecd31e0b') in 0.012274 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000059 seconds.
-  path: Assets/Audio/Game Sounds/066 - Tanks - Game Over.mp3
-  artifactKey: Guid(f5a1de9c7a828ef4587dc25f039ed5c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Game Sounds/066 - Tanks - Game Over.mp3 using Guid(f5a1de9c7a828ef4587dc25f039ed5c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb4f57bba34817c92ed9ad9aef468bc3') in 0.012814 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Audio/Game Sounds/063 - Tanks - Variation 8.mp3
-  artifactKey: Guid(89b055640cb29ca42ac0652fa46beb10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Game Sounds/063 - Tanks - Variation 8.mp3 using Guid(89b055640cb29ca42ac0652fa46beb10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b272d821b6e3fee288601478e68366e3') in 0.012300 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Audio/Game Sounds/068 - Tanks - Results.mp3
-  artifactKey: Guid(69500babce7d0bf47828a55807e732de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Game Sounds/068 - Tanks - Results.mp3 using Guid(69500babce7d0bf47828a55807e732de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45eaf783bd64b4508ca4a239f5078de4') in 0.013281 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Audio/Game Sounds/067 - Tanks - Clear Mission 100.mp3
-  artifactKey: Guid(cc6ec60f4095bcb4db103435d206ab05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Game Sounds/067 - Tanks - Clear Mission 100.mp3 using Guid(cc6ec60f4095bcb4db103435d206ab05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30eef2f9c9b6d7a11c1e3f30c8b1d9a5') in 0.012061 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.567639 seconds.
-  path: Assets/Audio/Instrument Samples
-  artifactKey: Guid(68dd692cfb45a2142a9a506f326d2dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Instrument Samples using Guid(68dd692cfb45a2142a9a506f326d2dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3841796d8a9797d2496b912eca999557') in 0.009428 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.055617 seconds.
-  path: Assets/Audio/Instrument Samples/GameFinish.wav
-  artifactKey: Guid(a26d82873f648d74ebd61e8484ec7b92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Instrument Samples/GameFinish.wav using Guid(a26d82873f648d74ebd61e8484ec7b92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '241a5f143c290b8d172d1cff8ae6486b') in 0.011606 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Audio/Instrument Samples/Sample_0021.wav
-  artifactKey: Guid(01258941cf0cf9a41b34a5a27aaa4802) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Instrument Samples/Sample_0021.wav using Guid(01258941cf0cf9a41b34a5a27aaa4802) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caf4a49e744206313ea28c831ced2d9a') in 0.011320 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Audio/Instrument Samples/Sample_0023.wav
-  artifactKey: Guid(cbaae1762e0729b4193abd4986dd3a0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Instrument Samples/Sample_0023.wav using Guid(cbaae1762e0729b4193abd4986dd3a0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dec5c33b051ebc9510ef3bd750f3e3a7') in 0.011774 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Audio/Instrument Samples/Sample_0024.wav
-  artifactKey: Guid(9cbfa92c7e72de6478f5ca6b39853f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Instrument Samples/Sample_0024.wav using Guid(9cbfa92c7e72de6478f5ca6b39853f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2e09195f9b4432b02be7c14c2a53bfd') in 0.013644 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Audio/Instrument Samples/ShellPop.wav
-  artifactKey: Guid(3405d8d33bcaf894b8e12f6361da0b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Instrument Samples/ShellPop.wav using Guid(3405d8d33bcaf894b8e12f6361da0b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b7f40eb2f2f86537794e116b5fcc946') in 0.014228 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Audio/Instrument Samples/ShellFire1.wav
-  artifactKey: Guid(d068c345dbe956d4c8511b0f07066f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Instrument Samples/ShellFire1.wav using Guid(d068c345dbe956d4c8511b0f07066f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd9b6527bea8e4be52c694085ddc8ac8') in 0.014448 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Audio/Instrument Samples/RocketFire.wav
-  artifactKey: Guid(0b13d173e2939e84abc698b6b46bc6bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Instrument Samples/RocketFire.wav using Guid(0b13d173e2939e84abc698b6b46bc6bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d7ac3db09ece3c4b3172a2c4ccd6755') in 0.013239 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Audio/Instrument Samples/Sample_0009.wav
-  artifactKey: Guid(67417ace3066f2d458ae07d23267ca37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Instrument Samples/Sample_0009.wav using Guid(67417ace3066f2d458ae07d23267ca37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6824cb8f9e4a7b6d1f94957b9db43543') in 0.013428 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Audio/Instrument Samples/Sample_0017.wav
-  artifactKey: Guid(4bcb27c338f575847a59887e3c201141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Instrument Samples/Sample_0017.wav using Guid(4bcb27c338f575847a59887e3c201141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '353a37632ded498fc554cc32f31a26b2') in 0.012532 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Audio/Instrument Samples/ShellFire2.wav
-  artifactKey: Guid(8e388eacb85f8cd48bd738c1281880ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Instrument Samples/ShellFire2.wav using Guid(8e388eacb85f8cd48bd738c1281880ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5b2ccc068dc112a193355465deeb310') in 0.012198 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Audio/Instrument Samples/MineExplode.wav
-  artifactKey: Guid(bb7707dabfb630e4d8143d59eda1c3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Instrument Samples/MineExplode.wav using Guid(bb7707dabfb630e4d8143d59eda1c3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ade38a27491cc8a29e5798bcd4a2e1c7') in 0.012759 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Audio/Instrument Samples/TankTrack4.wav
-  artifactKey: Guid(74f3168b6b8a0d948a80de251076ad5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Instrument Samples/TankTrack4.wav using Guid(74f3168b6b8a0d948a80de251076ad5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45287ab57b12125a980360de69bd5031') in 0.012635 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Audio/Instrument Samples/Sample_0018.wav
-  artifactKey: Guid(951d317c5dad7ee40b9bf3d280cd59da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Instrument Samples/Sample_0018.wav using Guid(951d317c5dad7ee40b9bf3d280cd59da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83a6a539a52efd8fe91ba336683e7c5f') in 0.013165 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Audio/Instrument Samples/MinePlant.wav
-  artifactKey: Guid(f421198f5d18fe44ab4cd433ec288c0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Instrument Samples/MinePlant.wav using Guid(f421198f5d18fe44ab4cd433ec288c0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9167612898a62c33d70fc1ee5c0baf0') in 0.012131 seconds 
+  Time since last request: 19.956181 seconds.
+  path: Assets/Scripts/Tank/CannonFire.cs
+  artifactKey: Guid(8d09fd9580aaa28408eafa7db3e2c78f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tank/CannonFire.cs using Guid(8d09fd9580aaa28408eafa7db3e2c78f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc6fc93bd950de744912e78792ab4214') in 0.007419 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005282 seconds.
+Registered in 0.005062 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\jackt\Documents\Wii-tanks\Wii Tanks\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\jackt\Documents\Wii-tanks\Wii Tanks\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.90 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.161 seconds
+- Completed reload, in  1.054 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1162ms)
-		BeginReloadAssembly (146ms)
+	ReloadAssembly (1055ms)
+		BeginReloadAssembly (138ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (43ms)
-		EndReloadAssembly (913ms)
-			LoadAssemblies (119ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (773ms)
+			LoadAssemblies (111ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (329ms)
+			SetupTypeCache (249ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (47ms)
-			SetupLoadedEditorAssemblies (372ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (321ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
+				InitializePlatformSupportModulesInManaged (12ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (75ms)
-				ProcessInitializeOnLoadAttributes (247ms)
-				ProcessInitializeOnLoadMethodAttributes (27ms)
-				AfterProcessingInitializeOnLoad (8ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (205ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.57 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.27 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3364 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 20 unused Assets / (79.8 KB). Loaded Objects now: 3844.
-Memory consumption went from 133.4 MB to 133.3 MB.
-Total: 5.111600 ms (FindLiveObjects: 0.396800 ms CreateObjectMapping: 0.117200 ms MarkObjects: 4.437100 ms  DeleteObjects: 0.158900 ms)
+Unloading 3366 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (79.8 KB). Loaded Objects now: 3834.
+Memory consumption went from 116.1 MB to 116.1 MB.
+Total: 3.032400 ms (FindLiveObjects: 0.288800 ms CreateObjectMapping: 0.096500 ms MarkObjects: 2.571300 ms  DeleteObjects: 0.075200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -546,7 +294,123 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004667 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\jackt\Documents\Wii-tanks\Wii Tanks\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\jackt\Documents\Wii-tanks\Wii Tanks\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.145 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1145ms)
+		BeginReloadAssembly (146ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (46ms)
+		EndReloadAssembly (878ms)
+			LoadAssemblies (100ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (304ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (377ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (80ms)
+				ProcessInitializeOnLoadAttributes (247ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.42 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3366 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (79.7 KB). Loaded Objects now: 3837.
+Memory consumption went from 116.1 MB to 116.1 MB.
+Total: 4.126500 ms (FindLiveObjects: 0.547000 ms CreateObjectMapping: 0.108500 ms MarkObjects: 3.363700 ms  DeleteObjects: 0.105200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 132.754832 seconds.
+  path: Assets/Scripts/Tank/CannonFire.cs
+  artifactKey: Guid(8d09fd9580aaa28408eafa7db3e2c78f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tank/CannonFire.cs using Guid(8d09fd9580aaa28408eafa7db3e2c78f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '797360ed70f05399e8989357f899acfb') in 0.008226 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004729 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\jackt\Documents\Wii-tanks\Wii Tanks\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\jackt\Documents\Wii-tanks\Wii Tanks\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.044 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1045ms)
+		BeginReloadAssembly (128ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (815ms)
+			LoadAssemblies (91ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (339ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (306ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (58ms)
+				ProcessInitializeOnLoadAttributes (209ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3366 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (79.8 KB). Loaded Objects now: 3840.
+Memory consumption went from 116.0 MB to 116.0 MB.
+Total: 3.651700 ms (FindLiveObjects: 0.362000 ms CreateObjectMapping: 0.090200 ms MarkObjects: 3.053000 ms  DeleteObjects: 0.144600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

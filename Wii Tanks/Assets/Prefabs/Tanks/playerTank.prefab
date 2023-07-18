@@ -145,6 +145,7 @@ GameObject:
   - component: {fileID: 5216663423661030392}
   - component: {fileID: 5216663423661030398}
   - component: {fileID: 1267102001364034459}
+  - component: {fileID: -2993541754624072279}
   m_Layer: 0
   m_Name: playerTank
   m_TagString: Player
@@ -284,6 +285,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-2993541754624072279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4840981549977887042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2841208a8bc1894499f4c3fe8e9e0cd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mine: {fileID: 7031536408229781640, guid: df9bfa0ff1aee2848b7f24cb0f25b310, type: 3}
 --- !u!1 &5763034241662916805
 GameObject:
   m_ObjectHideFlags: 0

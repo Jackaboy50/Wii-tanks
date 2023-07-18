@@ -60,12 +60,14 @@
     <Compile Include="Assets\Scripts\Tank\Tank Ai\brownCannon.cs" />
     <Compile Include="Assets\Scripts\Tank\CannonFire.cs" />
     <Compile Include="Assets\Scripts\Tank\LaserScript.cs" />
+    <Compile Include="Assets\Scripts\MusicPlayer.cs" />
     <Compile Include="Assets\Scripts\Crosshair.cs" />
     <Compile Include="Assets\Scripts\ShellMovement.cs" />
     <Compile Include="Assets\Scripts\Tank\TankMovement.cs" />
-    <Compile Include="Assets\Scripts\Tank\CannonMovement.cs" />
-    <Compile Include="Assets\Scripts\MusicPlayer.cs" />
     <Compile Include="Assets\Scripts\Tank\TankDeath.cs" />
+    <Compile Include="Assets\Scripts\Tank\CannonMovement.cs" />
+    <Compile Include="Assets\Scripts\MineSpawn.cs" />
+    <Compile Include="Assets\Scripts\MineExplosion.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

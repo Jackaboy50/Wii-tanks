@@ -66,10 +66,6 @@ public class ShellMovement : MonoBehaviour
             }
             localShellRicochets--;
         }
-        else if (collision.gameObject.tag == "Tank")
-        {
-            //KillTank(collision.gameObject);
-        }
     }
 
     void Ricochet(Collision collision)
