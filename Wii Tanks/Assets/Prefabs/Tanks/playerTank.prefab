@@ -146,6 +146,7 @@ GameObject:
   - component: {fileID: 5216663423661030398}
   - component: {fileID: 1267102001364034459}
   - component: {fileID: -2993541754624072279}
+  - component: {fileID: 542524499707788022}
   m_Layer: 0
   m_Name: playerTank
   m_TagString: Player
@@ -189,6 +190,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7175f5e9e97d68741aa2cd4eba86470e, type: 3}
   - {fileID: 8300000, guid: 948d1583fa598bc4a9187f55a96ecf9b, type: 3}
   - {fileID: 8300000, guid: 74f3168b6b8a0d948a80de251076ad5f, type: 3}
+  rb: {fileID: 542524499707788022}
 --- !u!82 &1267102001364034459
 AudioSource:
   m_ObjectHideFlags: 0
@@ -298,6 +300,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mine: {fileID: 7031536408229781640, guid: df9bfa0ff1aee2848b7f24cb0f25b310, type: 3}
+--- !u!54 &542524499707788022
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4840981549977887042}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 2
 --- !u!1 &5763034241662916805
 GameObject:
   m_ObjectHideFlags: 0

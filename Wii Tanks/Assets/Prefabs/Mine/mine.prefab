@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 4867360650564677910}
   m_Layer: 0
   m_Name: polygon1
-  m_TagString: Untagged
+  m_TagString: Mine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -199,7 +199,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 1166563488013055011, guid: 014f4821173623c4d90b9e57147001d6, type: 3}
 --- !u!114 &5932878571776409014

@@ -17,9 +17,11 @@ public class MineExplosion : MonoBehaviour
     private string[] colliderTags = new string[] { "Shell", "Tank", "Player" };
 
     private bool yellow = false;
+    private bool active = false;
     private bool armed = false;
 
-    private float armTime = 9f;
+    private float armTime = 1f;
+    private float dormantTime = 9f;
     private float explodeTime = 2.5f;
     
     void Start()
@@ -30,7 +32,7 @@ public class MineExplosion : MonoBehaviour
     }
     void Update()
     {
-        if(armed)
+        if(active)
         {
             MaterialSwap();
         }
@@ -40,6 +42,8 @@ public class MineExplosion : MonoBehaviour
     {
         yield return new WaitForSeconds(armTime);
         armed = true;
+        yield return new WaitForSeconds(dormantTime);
+        active = true;
         yield return new WaitForSeconds(explodeTime);
         StartCoroutine(Explode());
     }
@@ -50,7 +54,7 @@ public class MineExplosion : MonoBehaviour
         audioSource.clip = mineExplode;
         audioSource.Play();
         yield return new WaitForSeconds(2f);
-        Destroy(gameObject);
+        Destroy(transform.parent.gameObject);
     }
 
     void MaterialSwap()
@@ -68,9 +72,8 @@ public class MineExplosion : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if(colliderTags.Contains(collision.gameObject.tag))
+        if (colliderTags.Contains(collision.gameObject.tag) && armed)
         {
-            Debug.Log("collision griddy");
             StartCoroutine(Explode());
         }
     }

@@ -11,8 +11,6 @@ public class TankMovement : MonoBehaviour
 
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip[] tankTrackClips = new AudioClip[4];
-    private int trackIndex = 0;
-    bool waiting = false;
 
     private float movementSpeed = 50;
     private float rotationSpeed = 100;

@@ -25,16 +25,15 @@ public class TankDeath : MonoBehaviour
     {
         audioSource.clip = deathSound;
         audioSource.Play();
-        Instantiate(deathMark, new Vector3(transform.parent.position.x, 1f, transform.parent.position.z), new Quaternion(0.7071f, 0, 0, 0.7071f));
-        gameObject.GetComponent<SkinnedMeshRenderer>().enabled = false;
+        Instantiate(deathMark, new Vector3(transform.position.x, 1f, transform.position.z), new Quaternion(0.7071f, 0, 0, 0.7071f));
+        transform.GetChild(1).GetComponent<SkinnedMeshRenderer>().enabled = false;
         cannon.GetComponent<brownCannon>().enabled = false;
         yield return new WaitForSeconds(seconds);
-        Destroy(transform.parent.gameObject);
+        Destroy(gameObject);
     }
 
     void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("collison");
         if(collision.gameObject.tag == "Shell")
         {
             StartCoroutine(KillTank(0.7f));
